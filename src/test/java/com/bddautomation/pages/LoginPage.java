@@ -12,15 +12,15 @@ public class LoginPage  extends BasePage {
 	/**
 	 * Every class will having its private webdriver object
 	 */
-	private WebDriver driver;
+	
 
 
 	/**
 	 * All login page loacators
 	 */
 
-	private By emailIdLocator = By.id("username");
-	private By passwordLocator = By.id("password");
+	private By emailIdLocator = By.xpath("//input[@id='username']");
+	private By passwordLocator = By.xpath("//input[@id='password']");
 	private By signInButtonLocator = By.xpath("//button[text()='Log in']");
 	private By nickNameLocator = By.xpath("//div[@class='u-fl']//h3[@class='e2e-nickname u-wbba']");
 	private By apunKaPhotoLocator = By.xpath("//a[@class='home-avatar u-fr']");

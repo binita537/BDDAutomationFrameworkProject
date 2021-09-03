@@ -12,10 +12,10 @@ public class BasePage {
 
 	
 	
-	protected WebDriver driver;
+	public  WebDriver driver;
 	public JavascriptExecutor executor ;
 	
-	protected BasePage(WebDriver driver)
+	public  BasePage(WebDriver driver)
 	{
 	    this.driver=driver;
 	}
@@ -26,6 +26,10 @@ public class BasePage {
 		executor.executeScript("arguments[0].click();",element);
 	}
 	
+	public  void sendKeysByJS(WebElement element,String text) {	
+		JavascriptExecutor executor = (JavascriptExecutor) driver;
+		executor.executeScript("arguments[0].value="+text+"", element); 
+	}
 	
 	public String getPageTitle() {
 		return driver.getTitle();

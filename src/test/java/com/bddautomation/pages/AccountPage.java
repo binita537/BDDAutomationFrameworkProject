@@ -11,7 +11,7 @@ import com.bddautomation.basepage.BasePage;
 
 public class AccountPage extends BasePage {
 
-	private WebDriver driver;
+	
 
 	private By productAndSubscriptionLink = By
 			.xpath("//ul[@class='TK-Context-Menu TK-Menu']//li[@class='TK-Menu-Item'][2]");
