@@ -6,7 +6,7 @@ import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 
 @CucumberOptions(features = { "src/test/resources/Features" }, 
-                 glue = { "com.bddautomation.stepdefinitions","com.bddautomation.basepage" }, 
+                 glue = { "com.bddautomation.stepdefinitions","com.bddauromation.basstest" }, 
                  monochrome = true,
                  publish = true,
                  plugin = { "pretty",

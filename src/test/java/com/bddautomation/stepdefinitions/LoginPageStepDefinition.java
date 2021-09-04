@@ -4,6 +4,7 @@ import java.util.List;
 
 import java.util.Map;
 
+import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 
 import com.bddauromation.basstest.BaseTest;
@@ -43,6 +44,7 @@ public class LoginPageStepDefinition {
 	@Then("user nickname should be present")
 	public void user_nickname_should_be_present() {
 		String name=loginPage.getNickNameOnHomePage();
+		Assert.fail();
 		
 	}
 

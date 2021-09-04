@@ -36,6 +36,7 @@ public class HomePageStepDefinitions {
 	public void user_on_landed_on_the_homepage() {
 
 		driver.get(ApplicationUrl);
+	
 	}
 
 	@Then("Application logo should be displyed")
